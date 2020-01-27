@@ -1,4 +1,4 @@
-const script = require('../lib/script');
+const Manager = require('../lib/script').Manager;
 // const Manager = require("../lib/Manager");
 // const Employee = require("../lib/Employee");
 
