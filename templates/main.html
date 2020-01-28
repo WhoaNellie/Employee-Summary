@@ -13,6 +13,11 @@
 
 
     <style>
+         body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 140%;
+        }
+
         .cards{
             display: flex;
             flex-direction: row;
@@ -20,8 +25,53 @@
             justify-content: space-evenly;
         }
 
-        .office, .github, .school{
-            display: none;
+        .employee{
+            display: inline-block;
+            box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+        }
+
+        .head, .body{
+            padding: 7% 0;
+            width: 100%;
+            float: left;
+        }
+
+        .head{
+            background-color: #0077F7;
+            color: white;
+            text-align: center;
+        }
+
+        .body{
+            background-color: #F6F7F8;
+            padding: 13% 0;
+        }
+
+     
+        .id, .email, .github.show, .office.show, .school.show{
+            border: 1px solid rgba(187, 188, 194, 0.781);
+            background-color: white;
+            width: 70%;
+            margin: 0 auto;
+            padding: 1% 2%;
+            font-size: 16pt;
+        }
+
+        .id, .email{
+            border-bottom: none;
+        }
+
+
+        .id::before{
+            content: "ID: ";
+        }
+
+        .email::before{
+            content: "Email: ";
+        }
+
+        .github.show::before{
+            content: "GitHub: ";
         }
     
     </style>
@@ -30,7 +80,7 @@
 <body>
     
     <div class="cards">
-        {{cards}}
+        {{{cards}}}
     </div>
 
 </body>
