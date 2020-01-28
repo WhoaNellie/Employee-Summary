@@ -13,12 +13,14 @@
 
 
     <style>
-
-        body{
+         body{
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             line-height: 140%;
         }
 
+        i{
+            display: block;
+        }
         .cards{
             display: flex;
             flex-direction: row;
@@ -32,7 +34,7 @@
         }
 
         .head, .body{
-            padding: 7% 0;
+            padding: 5% 0;
             width: 100%;
             float: left;
         }
@@ -51,7 +53,6 @@
      
         .id, .email, .github.show, .office.show, .school.show{
             border: 1px solid rgba(187, 188, 194, 0.781);
-            /* border-radius: 2px; */
             background-color: white;
             width: 70%;
             margin: 0 auto;
@@ -75,6 +76,14 @@
         .github.show::before{
             content: "GitHub: ";
         }
+
+        .office.show::before{
+            content: "Office: ";
+        }
+
+        .school.show::before{
+            content: "School: ";
+        }
     
     </style>
 
@@ -85,31 +94,16 @@
         <div class="employee">
 
     <div class="head">
-        <h1 class="name">dsafsda</h1>
-        <h2 class="role"></h2>
+        <h1 class="name">dsfkj</h1>
+        <h2 class="role"><i class="fas fa-mug-hot"></i>Manager</h2>
     </div>
 
     <div class="body">
         <div class="id">1</div>
-        <div class="email">dsafds</div>
-        <div class="office show">23442</div>
-        <div class="github"></div>
-        <div class="school"></div>
-    </div>
-
-</div><div class="employee">
-
-    <div class="head">
-        <h1 class="name">sdfsdgf</h1>
-        <h2 class="role"></h2>
-    </div>
-
-    <div class="body">
-        <div class="id">2</div>
-        <div class="email">dfgsgfd</div>
-        <div class="office"></div>
-        <div class="github show">fdsg</div>
-        <div class="school"></div>
+        <div class="email">gdsks</div>
+        <div class="office show">4364</div>
+        <div class="github "></div>
+        <div class="school "></div>
     </div>
 
 </div>

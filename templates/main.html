@@ -18,6 +18,9 @@
             line-height: 140%;
         }
 
+        i{
+            display: block;
+        }
         .cards{
             display: flex;
             flex-direction: row;
@@ -31,7 +34,7 @@
         }
 
         .head, .body{
-            padding: 7% 0;
+            padding: 5% 0;
             width: 100%;
             float: left;
         }
@@ -72,6 +75,14 @@
 
         .github.show::before{
             content: "GitHub: ";
+        }
+
+        .office.show::before{
+            content: "Office: ";
+        }
+
+        .school.show::before{
+            content: "School: ";
         }
     
     </style>

@@ -2,15 +2,15 @@
 
     <div class="head">
         <h1 class="name">{{name}}</h1>
-        <h2 class="role">{{role}}</h2>
+        <h2 class="role"><i class="{{icon}}"></i>{{role}}</h2>
     </div>
 
     <div class="body">
         <div class="id">{{id}}</div>
         <div class="email">{{email}}</div>
-        <div class="office">{{officeNumber}}</div>
-        <div class="github">{{github}}</div>
-        <div class="school">{{school}}</div>
+        <div class="office {{offShow}}">{{officeNumber}}</div>
+        <div class="github {{gitShow}}">{{github}}</div>
+        <div class="school {{schoolShow}}">{{school}}</div>
     </div>
 
 </div>
